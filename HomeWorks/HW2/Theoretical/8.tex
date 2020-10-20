@@ -1,0 +1,26 @@
+\سؤال{\lr{ML \& MAP}}
+
+\begin{enumerate}
+	\item پیدا کردن \lr{joint}
+	$$f_{\mu, \: X, \: Y}(t, x, y) = f(x, y | t) f(t)$$
+	فرمول توزیع نرمال به صورت زیر است:
+	$$N(x, \mu, \sigma^2) = \frac{1}{\sqrt{2\pi} \sigma^2} e^{\frac{-(x - \mu) ^2}{2\sigma^2}}$$
+	حال با توجه به این‌که واریانس برابر با ۱ است، داریم:
+	$$f_{\mu, \: X, \: Y}(t, x, y) = f(x, y | t) f(t) = \begin{cases}
+	\frac{1}{2\pi} e^{-\frac{(x - t)^2 + (y - t)^2}{2}} & t \in [0, 1] \\
+	0 & otherwise \\
+	\end{cases}$$
+	\item 
+	پیدا کردن \lr{posterior}
+	$$MAP = arg max f(t|x, y) = \frac{f(x, y | t) f(t)}{f(x, y)} \sim arg max \log{f(t | x, y) \times 1}$$ 
+	با مشتق‌گیری از رابطه‌ی بالا و قرار دادن آن با صفر به رابطه‌ی $t = \frac{x + y}{2}$ می‌رسیم.
+	\item 
+	ارزیابی:
+	\begin{itemize}
+		\item آ)
+	$$x = \frac{3}{4}, y = 1 \rightarrow t = \frac{\frac{7}{4}}{2} = \frac{7}{8}$$
+		\item ب)
+		$$x = \frac{1}{2}, y = 2 \rightarrow \frac{\frac{5}{2}}{2} = \frac{5}{4} > 1$$
+		از آن‌جایی که تابع لگاریتم یک تابع یک‌به‌یک و صعودی است و مقدار احتمال بیش‌تر از یک نداریم، باید این احتمال را ۱ در نظر بگیریم.
+	\end{itemize}
+\end{enumerate}

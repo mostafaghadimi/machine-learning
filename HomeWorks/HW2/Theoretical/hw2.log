@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2020.7.1)  20 OCT 2020 21:31
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2020.7.1)  20 OCT 2020 22:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1417,8 +1417,16 @@ LaTeX Font Warning: Command \small invalid in math mode on input line 50.
 
 LaTeX Font Warning: Command \small invalid in math mode on input line 56.
 
-) [8] (./6.tex) [9] (./7.tex) [10] (./8.tex)
+) [8] (./6.tex) [9] (./7.tex) [10] (./8.tex
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 20.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 22.
+
+)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 39.
+ [11]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 39.
  (./hw2.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 39.
@@ -1429,12 +1437,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 25498 strings out of 493007
- 467456 string characters out of 6136720
+ 25500 strings out of 493007
+ 467552 string characters out of 6136720
  638889 words of memory out of 5000000
- 29127 multiletter control sequences out of 15000+600000
- 538023 words of font info for 70 fonts, out of 8000000 for 9000
+ 29128 multiletter control sequences out of 15000+600000
+ 538031 words of font info for 71 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  53i,10n,74p,10443b,452s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on hw2.pdf (10 pages).
+Output written on hw2.pdf (11 pages).
