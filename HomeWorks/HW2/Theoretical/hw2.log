@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2020.7.1)  20 OCT 2020 22:24
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2020.7.1)  20 OCT 2020 22:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1199,7 +1199,187 @@ lmroman10-bolditalic},ItalicFont={lmroman10-italic},SmallCapsFont={lmromancaps1
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 ))
-\g__fontspec_family_XBZar_int=\count348
+(/usr/share/texlive/texmf-dist/tex/latex/mdsymbol/mdsymbol.sty
+Package: mdsymbol 2012/11/18 v0.5 MdSymbol support package
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2017/04/05 v2.0i Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+)
+LaTeX Info: Redefining \oldstylenums on input line 334.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 350.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 351.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 352.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 353.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 354.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 355.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 356.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 357.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 358.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 359.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 360.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 361.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 362.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 363.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 364.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 365.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 366.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 367.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 368.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 369.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 370.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 371.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 372.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 373.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 374.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 375.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 376.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 377.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 378.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 379.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 380.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 381.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 382.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 383.
+Package textcomp Info: Setting lmtt sub-encoding to TS1/0 on input line 384.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 385.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 386.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 387.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 388.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 389.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 390.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 391.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 392.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 393.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 394.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 395.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 396.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 397.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 398.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 399.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 400.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 401.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 402.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 403.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 404.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 405.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
+)
+LaTeX Info: Redefining \dagger on input line 289.
+LaTeX Info: Redefining \ddagger on input line 290.
+LaTeX Info: Redefining \mathparagraph on input line 291.
+LaTeX Info: Redefining \mathsection on input line 292.
+LaTeX Info: Redefining \mathdollar on input line 293.
+LaTeX Info: Redefining \mathsterling on input line 294.
+LaTeX Info: Redefining \yen on input line 295.
+LaTeX Info: Redefining \circledR on input line 297.
+LaTeX Info: Redefining \circledS on input line 299.
+LaTeX Info: Redefining \Re on input line 300.
+LaTeX Info: Redefining \Im on input line 301.
+LaTeX Info: Redefining \thicksim on input line 303.
+LaTeX Info: Redefining \thickapprox on input line 304.
+LaTeX Info: Redefining \hslash on input line 305.
+LaTeX Info: Redefining \centerdot on input line 306.
+LaTeX Info: Redefining \hbar on input line 311.
+
+(/usr/share/texlive/texmf-dist/tex/generic/fltpoint/fltpoint.sty
+Package: fltpoint 2004/11/12 v1.1b floating point arithmetic
+
+(/usr/share/texlive/texmf-dist/tex/generic/fltpoint/fltpoint.tex
+\fp@loopcount=\count348
+\fp@loopcountii=\count349
+\fp@result=\count350
+\fp@carryover=\count351
+\fp@tempcount=\count352
+\fp@tempcountii=\count353
+))
+LaTeX Font Info:    Encoding `OMS' has changed to `U' for symbol font
+(Font)              `symbols' in the math version `normal' on input line 404.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> U/MdSymbolA/m/n on input line 404.
+LaTeX Font Info:    Encoding `OMS' has changed to `U' for symbol font
+(Font)              `symbols' in the math version `bold' on input line 404.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> U/MdSymbolA/b/n on input line 404.
+\symrelations=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `relations' in version `bold'
+(Font)                  U/MdSymbolB/m/n --> U/MdSymbolB/b/n on input line 405.
+\symarrows=\mathgroup7
+LaTeX Font Info:    Overwriting symbol font `arrows' in version `bold'
+(Font)                  U/MdSymbolC/m/n --> U/MdSymbolC/b/n on input line 406.
+\symnarrows=\mathgroup8
+LaTeX Font Info:    Overwriting symbol font `narrows' in version `bold'
+(Font)                  U/MdSymbolD/m/n --> U/MdSymbolD/b/n on input line 407.
+LaTeX Font Info:    Encoding `OMX' has changed to `U' for symbol font
+(Font)              `largesymbols' in the math version `normal' on input line 4
+08.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> U/MdSymbolE/m/n on input line 408.
+LaTeX Font Info:    Encoding `OMX' has changed to `U' for symbol font
+(Font)              `largesymbols' in the math version `bold' on input line 408
+.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> U/MdSymbolE/b/n on input line 408.
+\symdelimiters=\mathgroup9
+LaTeX Font Info:    Overwriting symbol font `delimiters' in version `bold'
+(Font)                  U/MdSymbolF/m/n --> U/MdSymbolF/b/n on input line 409.
+LaTeX Info: Redefining \vdots on input line 433.
+LaTeX Info: Redefining \relbar on input line 1408.
+LaTeX Info: Redefining \Relbar on input line 1409.
+LaTeX Info: Redefining \joinrel on input line 1410.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 1956.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 1957.
+LaTeX Font Info:    Redeclaring math accent \vec on input line 1959.
+LaTeX Font Info:    Redeclaring math symbol \setminus on input line 2037.
+LaTeX Font Info:    Redeclaring math symbol \mid on input line 2041.
+LaTeX Font Info:    Redeclaring math symbol \nmid on input line 2042.
+LaTeX Font Info:    Redeclaring math symbol \parallel on input line 2046.
+LaTeX Font Info:    Redeclaring math symbol \nparallel on input line 2047.
+LaTeX Font Info:    Redeclaring math symbol \shortmid on input line 2055.
+LaTeX Font Info:    Redeclaring math symbol \nshortmid on input line 2056.
+LaTeX Font Info:    Redeclaring math symbol \shortparallel on input line 2057.
+LaTeX Font Info:    Redeclaring math symbol \nshortparallel on input line 2058.
+
+LaTeX Font Info:    Redeclaring math delimiter \uparrow on input line 2067.
+LaTeX Font Info:    Redeclaring math delimiter \downarrow on input line 2068.
+LaTeX Font Info:    Redeclaring math delimiter \updownarrow on input line 2069.
+
+LaTeX Font Info:    Redeclaring math delimiter \Uparrow on input line 2070.
+LaTeX Font Info:    Redeclaring math delimiter \Downarrow on input line 2071.
+LaTeX Font Info:    Redeclaring math delimiter \Updownarrow on input line 2072.
+
+LaTeX Font Info:    Redeclaring math symbol \braceld on input line 2073.
+LaTeX Font Info:    Redeclaring math symbol \bracelu on input line 2074.
+LaTeX Font Info:    Redeclaring math symbol \bracerd on input line 2075.
+LaTeX Font Info:    Redeclaring math symbol \braceru on input line 2076.
+LaTeX Info: Redefining \overbrace on input line 2094.
+LaTeX Info: Redefining \underbrace on input line 2097.
+LaTeX Font Info:    Redeclaring math symbol \surd on input line 2109.
+LaTeX Info: Redefining \r@@t on input line 2113.
+LaTeX Info: Redefining \c@ncel on input line 2159.
+LaTeX Info: Redefining \not on input line 2160.
+\overliningbox=\box48
+)
+\g__fontspec_family_XBZar_int=\count354
 .................................................
 . fontspec info: "no-font-shape"
 . 
@@ -1228,7 +1408,7 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 . - 'small caps'  (m/sc) with NFSS spec.: 
 .................................................
 LaTeX Font Info:    Font shape `TU/XBZar(0)/m/n' will be
-(Font)              scaled to size 13.13995pt on input line 15.
+(Font)              scaled to size 13.13995pt on input line 16.
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
@@ -1241,24 +1421,31 @@ Package csquotes Info: ... none found.
  (./hw2.aux)
 \openout1 = `hw2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 21.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 21.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1294,52 +1481,64 @@ LaTeX Font Info:    ... okay on input line 20.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\AtBeginShipoutBox=\box48
-Package hyperref Info: Link coloring OFF on input line 20.
+\AtBeginShipoutBox=\box49
+Package hyperref Info: Link coloring OFF on input line 21.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count349
+\c@section@level=\count355
 )
-LaTeX Info: Redefining \ref on input line 20.
-LaTeX Info: Redefining \pageref on input line 20.
-LaTeX Info: Redefining \nameref on input line 20.
+LaTeX Info: Redefining \ref on input line 21.
+LaTeX Info: Redefining \pageref on input line 21.
+LaTeX Info: Redefining \nameref on input line 21.
 
 (./hw2.out) (./hw2.out)
 \@outlinefile=\write5
 \openout5 = `hw2.out'.
 
-\c@lstlisting=\count350
+\c@lstlisting=\count356
 File: Sharif.png Graphic file (type bmp)
 <Sharif.png>
 LaTeX Font Info:    Font shape `TU/XBZar(0)/m/n' will be
-(Font)              scaled to size 9.59998pt on input line 23.
+(Font)              scaled to size 9.59998pt on input line 24.
 
 
 LaTeX Font Warning: Font shape `TU/XBZar(0)/bx/n' undefined
-(Font)              using `TU/XBZar(0)/m/n' instead on input line 23.
+(Font)              using `TU/XBZar(0)/m/n' instead on input line 24.
 
 LaTeX Font Info:    Font shape `TU/XBZar(0)/bx/n' will be
-(Font)              scaled to size 9.59998pt on input line 23.
+(Font)              scaled to size 9.59998pt on input line 24.
 LaTeX Font Info:    Font shape `TU/XBZar(0)/m/n' will be
-(Font)              scaled to size 11.99997pt on input line 23.
+(Font)              scaled to size 11.99997pt on input line 24.
 LaTeX Font Info:    Font shape `TU/XBZar(0)/m/n' will be
-(Font)              scaled to size 17.27994pt on input line 23.
+(Font)              scaled to size 17.27994pt on input line 24.
 LaTeX Font Info:    Font shape `TU/XBZar(0)/bx/n' will be
-(Font)              scaled to size 17.27994pt on input line 23.
+(Font)              scaled to size 17.27994pt on input line 24.
 LaTeX Font Info:    Font shape `TU/XBZar(0)/bx/n' will be
-(Font)              scaled to size 13.13995pt on input line 23.
+(Font)              scaled to size 13.13995pt on input line 24.
 
-Underfull \hbox (badness 10000) in paragraph at lines 23--23
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
 [][]
  []
 
 LaTeX Font Info:    Font shape `TU/XBZar(0)/m/n' will be
-(Font)              scaled to size 14.39996pt on input line 23.
+(Font)              scaled to size 14.39996pt on input line 24.
 (./1.tex
+LaTeX Font Info:    Font shape `U/MdSymbolA/m/n' will be
+(Font)              scaled to size 14.4pt on input line 1.
+LaTeX Font Info:    Font shape `U/MdSymbolA/m/n' will be
+(Font)              scaled to size 10.0pt on input line 1.
+LaTeX Font Info:    Font shape `U/MdSymbolA/m/n' will be
+(Font)              scaled to size 7.0pt on input line 1.
+LaTeX Font Info:    Font shape `U/MdSymbolE/m/n' will be
+(Font)              scaled to size 14.4pt on input line 1.
+LaTeX Font Info:    Font shape `U/MdSymbolE/m/n' will be
+(Font)              scaled to size 10.0pt on input line 1.
+LaTeX Font Info:    Font shape `U/MdSymbolE/m/n' will be
+(Font)              scaled to size 7.0pt on input line 1.
 LaTeX Font Info:    Try loading font information for U+msa on input line 1.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1349,6 +1548,67 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 1.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+LaTeX Font Info:    Font shape `U/MdSymbolB/m/n' will be
+(Font)              scaled to size 14.4pt on input line 1.
+LaTeX Font Info:    Font shape `U/MdSymbolB/m/n' will be
+(Font)              scaled to size 10.0pt on input line 1.
+LaTeX Font Info:    Font shape `U/MdSymbolB/m/n' will be
+(Font)              scaled to size 7.0pt on input line 1.
+LaTeX Font Info:    Font shape `U/MdSymbolC/m/n' will be
+(Font)              scaled to size 14.4pt on input line 1.
+LaTeX Font Info:    Font shape `U/MdSymbolC/m/n' will be
+(Font)              scaled to size 10.0pt on input line 1.
+LaTeX Font Info:    Font shape `U/MdSymbolC/m/n' will be
+(Font)              scaled to size 7.0pt on input line 1.
+LaTeX Font Info:    Font shape `U/MdSymbolD/m/n' will be
+(Font)              scaled to size 14.4pt on input line 1.
+LaTeX Font Info:    Font shape `U/MdSymbolD/m/n' will be
+(Font)              scaled to size 10.0pt on input line 1.
+LaTeX Font Info:    Font shape `U/MdSymbolD/m/n' will be
+(Font)              scaled to size 7.0pt on input line 1.
+LaTeX Font Info:    Font shape `U/MdSymbolF/m/n' will be
+(Font)              scaled to size 14.4pt on input line 1.
+LaTeX Font Info:    Font shape `U/MdSymbolF/m/n' will be
+(Font)              scaled to size 10.0pt on input line 1.
+LaTeX Font Info:    Font shape `U/MdSymbolF/m/n' will be
+(Font)              scaled to size 7.0pt on input line 1.
+LaTeX Font Info:    Font shape `U/MdSymbolA/m/n' will be
+(Font)              scaled to size 10.95pt on input line 4.
+LaTeX Font Info:    Font shape `U/MdSymbolA/m/n' will be
+(Font)              scaled to size 8.0pt on input line 4.
+LaTeX Font Info:    Font shape `U/MdSymbolA/m/n' will be
+(Font)              scaled to size 6.0pt on input line 4.
+LaTeX Font Info:    Font shape `U/MdSymbolE/m/n' will be
+(Font)              scaled to size 10.95pt on input line 4.
+LaTeX Font Info:    Font shape `U/MdSymbolE/m/n' will be
+(Font)              scaled to size 8.0pt on input line 4.
+LaTeX Font Info:    Font shape `U/MdSymbolE/m/n' will be
+(Font)              scaled to size 6.0pt on input line 4.
+LaTeX Font Info:    Font shape `U/MdSymbolB/m/n' will be
+(Font)              scaled to size 10.95pt on input line 4.
+LaTeX Font Info:    Font shape `U/MdSymbolB/m/n' will be
+(Font)              scaled to size 8.0pt on input line 4.
+LaTeX Font Info:    Font shape `U/MdSymbolB/m/n' will be
+(Font)              scaled to size 6.0pt on input line 4.
+LaTeX Font Info:    Font shape `U/MdSymbolC/m/n' will be
+(Font)              scaled to size 10.95pt on input line 4.
+LaTeX Font Info:    Font shape `U/MdSymbolC/m/n' will be
+(Font)              scaled to size 8.0pt on input line 4.
+LaTeX Font Info:    Font shape `U/MdSymbolC/m/n' will be
+(Font)              scaled to size 6.0pt on input line 4.
+LaTeX Font Info:    Font shape `U/MdSymbolD/m/n' will be
+(Font)              scaled to size 10.95pt on input line 4.
+LaTeX Font Info:    Font shape `U/MdSymbolD/m/n' will be
+(Font)              scaled to size 8.0pt on input line 4.
+LaTeX Font Info:    Font shape `U/MdSymbolD/m/n' will be
+(Font)              scaled to size 6.0pt on input line 4.
+LaTeX Font Info:    Font shape `U/MdSymbolF/m/n' will be
+(Font)              scaled to size 10.95pt on input line 4.
+LaTeX Font Info:    Font shape `U/MdSymbolF/m/n' will be
+(Font)              scaled to size 8.0pt on input line 4.
+LaTeX Font Info:    Font shape `U/MdSymbolF/m/n' will be
+(Font)              scaled to size 6.0pt on input line 4.
+
 
 LaTeX Font Warning: Command \small invalid in math mode on input line 4.
 
@@ -1417,6 +1677,9 @@ LaTeX Font Warning: Command \small invalid in math mode on input line 50.
 
 LaTeX Font Warning: Command \small invalid in math mode on input line 56.
 
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 69.
+
 ) [8] (./6.tex) [9] (./7.tex) [10] (./8.tex
 
 LaTeX Font Warning: Command \small invalid in math mode on input line 20.
@@ -1425,23 +1688,23 @@ LaTeX Font Warning: Command \small invalid in math mode on input line 20.
 LaTeX Font Warning: Command \small invalid in math mode on input line 22.
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 39.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 40.
  [11]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 39.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 40.
  (./hw2.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 39.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 39.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 40.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 40.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 25500 strings out of 493007
- 467552 string characters out of 6136720
- 638889 words of memory out of 5000000
- 29128 multiletter control sequences out of 15000+600000
- 538031 words of font info for 71 fonts, out of 8000000 for 9000
+ 27395 strings out of 493007
+ 492779 string characters out of 6136720
+ 649784 words of memory out of 5000000
+ 31002 multiletter control sequences out of 15000+600000
+ 546615 words of font info for 98 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  53i,10n,74p,10443b,452s stack positions out of 5000i,500n,10000p,200000b,80000s
 
