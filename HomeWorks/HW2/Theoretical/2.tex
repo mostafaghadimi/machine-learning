@@ -1,0 +1,36 @@
+\سؤال{مشتق‌گیری}
+
+هر کدام از روابط زیر را ثابت کنید.
+\begin{itemize}
+	\item 
+	$\frac{\partial a^tx}{\partial x} = a$
+	
+	$$
+	\frac{\partial a^tx}{\partial x} = 
+	\frac{\partial \begin{pmatrix}
+		a_1 & \dots & a_n \\
+		\end{pmatrix}
+		\begin{pmatrix}
+		x_1 \\
+		\vdots \\
+		x_n \\
+		\end{pmatrix}}{\partial x}
+	= \frac{\partial (a_1x_1 + \dots + a_nx_n)}{\partial x}
+	$$
+	اگر $f = (a_1x_1 + \dots + a_nx_n)$ داریم:
+	$$
+	\frac{\partial a^tx}{\partial x} = 	\frac{\partial f}{\partial x} = 
+	\begin{pmatrix}
+		\frac{\partial f}{\partial x_1} \\
+		 \dots \\ \frac{\partial f}{\partial x_n}\\
+	\end{pmatrix} =
+	\begin{pmatrix}
+	a_1 \\
+	\dots \\
+	 a_n \\
+	\end{pmatrix}
+	= a
+	$$
+	\item 
+	$\frac{\partial x^tAx}{\partial x} = 2xA$
+\end{itemize}
