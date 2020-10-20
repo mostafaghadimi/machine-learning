@@ -31,6 +31,66 @@
 	\end{pmatrix}
 	= a
 	$$
+	
 	\item 
-	$\frac{\partial x^tddAx}{\partial x} = 2xA$
+	$\frac{\partial x^tAx}{\partial x} = 2xA$
+	
+	$$
+	y = f(x) = x^TAx = \Sigma_{i = 1}^{n}\Sigma_{j = 1}^{n}a_{ij}x_{i}x_{j}
+	$$
+	$$
+	= \Sigma_{i = 1}^{n}a_{i1}x_{i}x_{1} + \Sigma_{j = 1}^{n}a_{1j}x_{1}x_{j} + \Sigma_{i = 2}^{n}\Sigma_{j = 2}^{n}
+	$$
+	$$
+	\frac{\partial f}{\partial x_{1}} = 
+	\Sigma_{i = 1}^{n}a_{i1}x_{i} + \Sigma_{j = 1}^{n}a_{1j}x_j
+	$$
+	از آن‌جایی که $a_{1i} = a_{i1}$ داریم:
+	$$
+	= \Sigma_{i = 1}^{n}a_{1i}x_{i} + \Sigma_{i = 1}^{n} a_{1i}x_{i}
+	$$
+	$$
+	= 2 \Sigma_{i = 1}^{n}a_{1i}x_i
+	$$
+	$$
+	\rightarrow \frac{\partial f}{\partial x} = \begin{pmatrix}
+	2\Sigma_{i = 1}^{n}a_{1i}x_{i} \\
+	\vdots \\
+		2\Sigma_{i = 1}^{n}a_{ni}x_{i}
+	\end{pmatrix}
+	= 2 \begin{pmatrix}
+	a_{11} & \dots & a_{1n}\\
+	\vdots & \ddot & \vdots \\
+	a_{n1} & \dots & a_{nn}
+	\end{pmatrix}
+	\begin{pmatrix}
+	x_1 \\
+	\vdots \\
+	x_n \\
+	\end{pmatrix}
+	= 2Ax = 2x^TA
+	$$ 
+	\item 
+	$\frac{\partial^2 x^TAx}{\partial x \partial x^T} = A + A^T$
+	
+	با توجه به قاعده‌ی ضرب در بردارها داریم:
+	$$\frac{\partial u^Tv}{\partial x} = u^T \frac{\partial v}{\partial x} + v^T \frac{\partial u}{\partial x}$$
+	
+	برای راحتی کار در قسمت بعد رابطه‌ی $\frac{\partial Ax}{\partial x} = A$ را در این قسمت ثابت می‌کنیم:
+	$$
+		s = Ax \rightarrow s_i = \Sigma_{j}a_{ij}xj \rightarrow \frac{\partial s_i}{\partial x_j} = a_{ij} \rightarrow \frac{\partial s}{\partial x} = A
+	$$
+حال اگر قاعده‌ی بالا را استفاده کنیم، داریم:
+$$\frac{\partial x^TAx}{\partial x}
+= x^T \frac{\partial Ax}{\partial x} + (Ax)^T \frac{\partial x}{\partial x} = x^TA + (Ax)^T = x^T(A + A^T)
+$$ 
+
+$$ \rightarrow \frac{\partial^2 x^TAx}{\partial x \partial x^T} = \frac{\partial x^T(A + A^T)}{\partial x^T} = A + A^T$$
+
+\item $\frac{\partial tr(X^TAX)}{\partial X} = X^T(A + A^T)$ 
+
+$$(X^TAX)_{ij} = \Sigma_{k}\Sigma_{l}x_{ki}a_{kl}x_{lj}$$
+$$tr(X^TAX) = \Sigma_{r}\Sigma_{k}\Sigma_{l} x_{kr}a_{kl}x_{lr}$$
+$$\frac{\partial tr(X^TAX)}{\partial x_{ij}} = \Sigma_{l}a_{il}x_{lj} + \Sigma_{k} x_{kj}a_{ki} = \Sigma_{k}x_{kj}a_{ki} + \Sigma_{l}x_{lj}a_{il}$$
+$$\rightarrow \frac{\partial tr(X^TAX)}{\partial X} = X^TA + X^TA^T = X^T(A + A^T)$$
 \end{itemize}
