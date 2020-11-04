@@ -1,0 +1,41 @@
+\سؤال{}
+
+\begin{itemize}
+	\item الف)
+	فرض می‌کنیم که از تابع اندازه‌گیری خطای lr{MSE} استفاده می‌کنیم و معیار خطای ما فقط $j$ است؛ بنابراین داریم:
+	$$
+	L_{MSE}(x, w) = \Sigma_{i = 1}^{N} (y^{(i)} - w_jx^{(i)}_j)^2
+	$$
+	
+	$$
+	\frac{\partial L}{\partial w_j} = 0
+	\rightarrow
+	\frac{\partial L}{\partial w_j} = -2 \Sigma_{i = 1}^N(y^{(i)} - w_jx^{(i)_j})x^{(i)}_j = 0
+	$$
+	
+	$$
+	\rightarrow \Sigma_{i = 1}^N (x^{(i)_j})^2 w_j = \Sigma_{i = 1}^N x_j^{(i)}y^{(i)}
+	$$
+	
+	$$	
+	\rightarrow x^T_jx_jw_j = x_j^Ty \rightarrow w_j = \frac{x_j^Ty}{x_j^Tx_j}
+	$$
+	\item ب)
+	
+	$$
+	w = (X^TX)^{-1}y = \begin{pmatrix}
+		|x_1|^2 & \dots & 0 \\
+		\vdots & \ddots & \vdots\\
+		0 & \dots & |x_M|^2
+	\end{pmatrix}^{-1}X^Ty = \begin{pmatrix}
+	\frac{1}{|x_1|^2} & \dots & 0 \\
+	\vdots & \ddots & \vdots\\
+	0 & \dots & \frac{1}{|x_M|^2}
+	\end{pmatrix}^{-1}X^Ty
+	$$
+	
+	$$
+	\rightarrow w_j = \frac{1}{|x_j|^2}x_j^Ty= \frac{x_j^Ty}{x_j^Tx_j}
+	$$
+	\item پ)
+\end{itemize}
