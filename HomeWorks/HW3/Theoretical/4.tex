@@ -1,0 +1,45 @@
+\سؤال{}
+
+\begin{itemize}
+	\item بازنویسی فرمول $tanh$ بر اساس $sigmoid$
+	$$
+	tanh(x) = \frac{e^{2x} - 1}{e^{2x} + 1}, \: S(x)= \frac{1}{1 + e^{-x}}
+	$$
+	
+	دو رابطه‌ای که می‌توان از فرمول‌های بالا به دست آورد، به شکل زیر هستند:
+	$$
+	tanh(x) = 1 - \frac{2}{e^{2x} + 1}, \: S(-x) = 1 - S(x)
+	$$
+	با توجه به نتایج بالا داریم:
+	
+	$$
+	tanh(x) =  \frac{e^{2x} - 1}{e^{2x} + 1} =  1 - \frac{2}{e^{2x} + 1} = 1 - 2S(-2x) = 1 - 2(1 - S(2x)) = 1 - 2 + 2S(2x) = 2S(2x) - 1
+	$$
+	
+	\item پیدا کردن رابطه‌ی بین وزن‌های $tanh$ و $sigmoid$
+	
+	$$
+		f(x; w^{(g)}) = w_0^{(g)} + \Sigma_i^{m}w_j^{(g)}g(x)
+	$$
+	حال با رابطه‌ای که در قسمت قبل به‌دست آورده‌ایم و جای‌گذاری آن‌ها داریم:
+	$$
+		f(x; w^{(sigmoid)}) = f(x; w^{(sigmoid)}) = w_0^{(sigmoid)} + \Sigma_i^{m}w_j^{(sigmoid)}S(x)
+	$$
+	
+	$$
+		f(x; w^{(tanh)}) = f(x; w^{(tanh)}) = w_0^{(tanh)} + \Sigma_i^{m}w_j^{(tanh)}(2S(2x) - 1)
+	$$
+	حال با تغییر متغیر $X = \frac{x}{2}$ داریم:
+	$$
+		f(x; w^{(sigmoid)}) = f(x; w^{(sigmoid)}) = w_0^{(sigmoid)} + \Sigma_i^{m}w_j^{(sigmoid)}S(2X)
+		= w_0^{(sigmoid)} + \Sigma_i^{m}\frac{w_j^{(sigmoid)}}{2}(2S(2X) - 1 + 1)
+	$$
+	
+	$$
+	w_0^{(tanh)} + \Sigma_i^{m}w_j^{(tanh)}(tanh(X))
+	$$
+	
+	$$
+	w_0^{tanh} = w_0^{sigmoid} + \Sigma_i^{M} \frac{w_j^{(sigmoid)}}{2}, \: w_j^{(tanh)} = \frac{ w_j^{(sigmoid)}}{2} \: j \in \{1, ..., M\}
+	$$
+\end{itemize}
