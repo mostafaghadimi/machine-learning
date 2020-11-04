@@ -1,0 +1,43 @@
+\سؤال{}
+
+
+اگر $y_n = y(x_n, w)$ آن‌گاه داریم:
+$$
+y^{noisy}_n = w_0 + \Sigma_i^{D} w_i(x_{ni} + \epsilon_{ni}) 
+= y_n + \Sigma_i^{D}w_i\epsilon_{ni}
+$$
+
+حال با استفاده از 
+$
+E_D(w) = \frac{1}{2} \Sigma_{n = 1}^{N}(y(x_n, w) - t_n)^2
+$
+داریم:
+$$
+E^{noisy} = 
+\frac{1}{2}\Sigma_{n = 1}^{N}(y^{noisy}_{n} - t_n)^2 
+= \frac{1}{2}\Sigma_{n =  1}^{N}(y_n^{noisy \: 2} - 2y_n^{noisy}t_n + t_n^2)
+$$
+
+$$
+\rightarrow E^{noisy} = 
+\frac{1}{2} \Sigma_{n = 1}^{N}(y_n^2 + 2y_n\Sigma_{i = 1}^{D}w_i\epsilon_{ni} + (\Sigma_{i = 1}^{D}w_i\epsilon_{ni})^2 - 2t_ny_n - 2t_n\Sigma_{i = 1}^{D}w_i\epsilon_{ni} + t_n^2)
+$$
+
+حال اگر امید ریاضی $E^{noisy}$را بگیریم که جملع‌ی  $2y_n\Sigma_{i = 1}^{D}w_i\epsilon_{ni}$ و جمله‌ی 
+$
+- 2t_n\Sigma_{i = 1}^{D}w_i\epsilon_{ni} + t_n^2
+$
+به دلیل 
+$
+\mathbb{E}(\epsilon_{ni}) = 0
+$
+حذف می‌شوند. 
+\\
+به دلیل استقلال $\epsilon_{ni}$ها داریم:
+$$
+\mathbb{E}[(\Sigma_{i = 1}^{D}w_i\epsilon_{ni})^2] = \Sigma_{i = 1}^{D}w_i^2\sigma^2
+$$
+
+$$
+\rightarrow \mathbb{E}[E^{noisy}] = E_D + \frac{1}{2} \Sigma_{i = 1}^{D} w_i^2\sigma^2
+$$
