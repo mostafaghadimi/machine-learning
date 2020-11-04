@@ -1,0 +1,29 @@
+\سؤال{}
+
+$$
+L(w) = \Sigma_{i = 1}^{N}F_i(y^{(i)} - w^Tx)^2
+$$
+
+اگر نسبت به $w_j$ مشتق بگیریم، داریم:
+
+$$
+\frac{\partial L(w)}{\partial w_j} = -2 \Sigma_{i = 1}^{N} F_i(y^{(i)} - w^Tx_i)x_{ij} = 0, \: for \: j \in \{1, ... M\}
+$$
+
+با جابه‌جا کردن طرفین معادله داریم:
+
+$$
+\frac{\partial L(w)}{\partial w_j} = 
+\Sigma_{i = 1}^{N}x_{ij}F_iw^Tx_i = \Sigma_{n = 1}^{N}x_{ij}F_iy^{(i)} 
+$$
+اگر قسمت سمت چپ را باز کنیم، داریم:
+
+$$
+\Sigma_{i = 1}^{N}\Sigma_{k = 1}^{M} x_{ij} F_i x_{ik}w_k = \Sigma_{i = 1}^{N}x_{ij}F_iy^{(i)}
+$$
+
+در صورتی که فرض کنیم که $F$ ماتریس قطری  و $F_i$ همان $F_{ii}$  است بنابراین:
+
+$$
+(X^TFX)w = X^TFy \rightarrow w = (X^TFX)^{-1}X^TFy
+$$
