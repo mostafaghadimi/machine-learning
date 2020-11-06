@@ -2,23 +2,32 @@
 
 \begin{itemize}
 	\item الف)
-	فرض می‌کنیم که از تابع اندازه‌گیری خطای lr{MSE} استفاده می‌کنیم و معیار خطای ما فقط $j$ است؛ بنابراین داریم:
+%	فرض می‌کنیم که از تابع اندازه‌گیری خطای lr{MSE} استفاده می‌کنیم و معیار خطای ما فقط $j$ است؛ بنابراین داریم:
+%	$$
+%	L_{MSE}(x, w) = \Sigma_{i = 1}^{N} (y^{(i)} - w_jx^{(i)}_j)^2
+%	$$
+%	
+%	$$
+%	\frac{\partial L}{\partial w_j} = 0
+%	\rightarrow
+%	\frac{\partial L}{\partial w_j} = -2 \Sigma_{i = 1}^N(y^{(i)} - w_jx^{(i)_j})x^{(i)}_j = 0
+%	$$
+%	
+%	$$
+%	\rightarrow \Sigma_{i = 1}^N (x^{(i)_j})^2 w_j = \Sigma_{i = 1}^N x_j^{(i)}y^{(i)}
+%	$$
+%	
+%	$$	
+%	\rightarrow x^T_jx_jw_j = x_j^Ty \rightarrow w_j = \frac{x_j^Ty}{x_j^Tx_j}
+%	$$
+	می‌دانیم:
 	$$
-	L_{MSE}(x, w) = \Sigma_{i = 1}^{N} (y^{(i)} - w_jx^{(i)}_j)^2
+	w_j = (x_j^Tx_j)^{-1}x_j^Ty
 	$$
+	چون $(x_j^Tx_j)$ یک عدد است بنابراین معادله بالا را می‌توان به شکل زیر نوشت:
 	
 	$$
-	\frac{\partial L}{\partial w_j} = 0
-	\rightarrow
-	\frac{\partial L}{\partial w_j} = -2 \Sigma_{i = 1}^N(y^{(i)} - w_jx^{(i)_j})x^{(i)}_j = 0
-	$$
-	
-	$$
-	\rightarrow \Sigma_{i = 1}^N (x^{(i)_j})^2 w_j = \Sigma_{i = 1}^N x_j^{(i)}y^{(i)}
-	$$
-	
-	$$	
-	\rightarrow x^T_jx_jw_j = x_j^Ty \rightarrow w_j = \frac{x_j^Ty}{x_j^Tx_j}
+	w_j = \frac{x_j^Ty}{x_j^Tx_j}
 	$$
 	\item ب)
 	
@@ -38,4 +47,35 @@
 	\rightarrow w_j = \frac{1}{|x_j|^2}x_j^Ty= \frac{x_j^Ty}{x_j^Tx_j}
 	$$
 	\item پ)
+	$$
+	w = (X^TX)^{-1}X^Ty = \begin{pmatrix}
+	N + 1 & (N+1) \mathbb{E}[X_j]\\
+	(N + 1)\mathbb{E}[X_j] & (N + 1)(var(X_j) + \mathbb{E}[X_j]^2)
+	\end{pmatrix}^{-1}X^Ty
+	$$
+	
+	$$
+	\rightarrow
+	w = (X^TX)^{-1}X^Ty = \begin{pmatrix}
+	N + 1 & (N+1) \mathbb{E}[X_j]\\
+	(N + 1)\mathbb{E}[X_j] & \Sigma X_j^2
+	\end{pmatrix}^{-1}X^Ty
+	$$
+	
+	$$
+	\rightarrow
+	w = \frac{1}{N + 1} (N + 1) \frac{1}{var(X_j)}\begin{pmatrix}
+	var(X_j) + \mathbb{E}[X_j]^2 & -\mathbb{E}[X_j]\\
+	-\mathbb{E}[X_j] & 1
+	\end{pmatrix}\begin{pmatrix}
+	\mathbb{E}[y]\\
+	cov(X_J, y) + \mathbb{E}[X_j]\mathbb{E}[y]
+	\end{pmatrix}
+	$$
+	
+	$$
+	\rightarrow
+	w_j = \frac{cov(X_j, y)}{var(X_j)}, \: w_0 = \frac{var(X_j)\mathbb{E}[y] - \mathbb{E}[X_j]cov(X_j, y)}{var(X_j)} = \mathbb{E}[y] - w_j \mathbb{E}[X_j]
+	$$
+%	
 \end{itemize}
