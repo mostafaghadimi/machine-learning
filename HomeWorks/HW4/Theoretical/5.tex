@@ -1,0 +1,39 @@
+\سؤال{\lr{Probabilistic Modeling Regression}}
+
+\begin{itemize}
+	\item اثبات:
+	$$
+	y \propto N(f(w, x), \beta^{-1}) \rightarrow P(Y|X, w) = \prod_{i = 1}^{N} N(f(w, x), \beta^{-1}) = \prod_{i = 1}^{N} (\frac{\sqrt{\beta}}{2\pi}e^{\frac{-(y_i - f(w, x)^2\beta^2)}{2}})
+	$$
+	حال اگر از $likelihood$ لگاریتم بگیریم خواهیم داشت:
+	$$
+	-\frac{N}{2}log(2\pi) + \frac{N}{2} log(\beta) - \beta \frac{\Sigma_{i = 1}^{N}(y_i - f(w, x))^2}{2}
+	$$
+	که دو جمله‌ی اول ثابت هستند. بنابراین برای ماکسیمم کردن فقط باید جمله‌ی آخر را در نظر بگیریم که آن دقیقا همان $Sum \: Squared \: Error$ می‌باشد.
+	\item با توجه به راهنمایی سوال و آن‌چه از قاعده‌ی $Bayes$ و $MAP$ می‌دانیم داریم:
+	$$
+	P(W|Y) \propto P(W)P(Y|W)
+	$$
+	
+	$$  P(W|Y): posterior, \: P(W): Prior, \: P(W|Y): Likelihood
+	$$
+	
+	$$
+	\implies log(P(W|Y)) = log(P(W)P(Y|W)) = \frac{-\beta \Sigma_{i = 1}^{N}(y_i - f(w, x))^2}{2} + log(\frac{e^{\frac{-1}{2}(w - \theta)^t \alpha I(w - \theta)}}{\sqrt{2\pi ^ k \Sigma}})
+	$$
+	
+	حال اگر ثوابت را حذف کنیم داریم:
+	 $$
+	 -||y-f(w, x)||^2 - \frac{\alpha}{2} w^tw  = 	 -||y-f(w, x)||^2 - \frac{\alpha}{2} ||w||^2
+	 $$
+	 \item 
+	 مشابه قسمت قبلی عمل می‌کنیم. 
+	 $$
+	 	P(W|Y) \propto P(W)P(Y|W) \implies \implies log(P(W|Y)) = log(P(W)P(Y|W)) = -\frac{\beta}{2}\Sigma_{i = 1}^{n}(y_i - f(w, x_i))^2 + \Sigma_{i = 1}^{m}ln(\frac{\alpha}{2}e^{-\alpha |x|})
+	 $$
+	 که در نتیجه با حذف ثوابت داریم:
+	 $$
+	 \implies -\frac{\beta}{2}\Sigma_{i = 1}^{n}(y_i - f(w, x_i))^2 - \alpha \Sigma_{i = 1}^{m}|x|
+	 $$
+	 که همان \lr{Lasso Regularized Sum Square Error} است.
+\end{itemize}
