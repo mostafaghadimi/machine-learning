@@ -1,0 +1,51 @@
+\سؤال{\lr{Bayesian Linear Regression}}
+
+\begin{itemize}
+	\item اثبات:
+	 $$
+	 P(W|Y) \propto P(Y|W)P(W) \rightarrow ln(P(W|Y)) \propto -\frac{\beta}{2}(Y - XW)^T(Y-XW)-\frac{1}{2}(W - m_0)^TS_0^{-1}(W- m_0)
+	 $$
+	 
+	 $$
+	 \implies ln(P(W|Y)) \propto \beta(Y - XW)^T(Y-XW) + (W - m_0)^TS_0^{-1}(W - m_0)
+	 $$
+	 حال اگر سمت راست معادله را باز کنیم خواهیم داشت:
+	  $$
+	  \implies ln(P(W|Y)) \propto \beta W^TX^TXw - 2\beta W^TX^TY - 2W^TS_0^{-1}m_0 + W^TS_0^{-1}W
+	  $$
+	  می‌دانیم 
+	  $S_N^{-1} = S_0^{-1} + \beta X^TX$ و 
+	  $
+	  S_N^{-1}m_N = S_0^{-1}m_0 + \beta X^TY
+	  $
+	  
+	  $$
+	  \implies ln(P(W|Y)) \propto W^TS_N^{-1}W - 2W^TS_N^{-1}m_N \begin{cases}
+	  m_n = S_N(S_0^{-1}m_0 + \beta X^TY)\\
+	  S_N^{-1} = S_0^{-1} + \beta X^TX
+	  \end{cases}
+	  $$
+	  
+	  $$
+	  m_0 = 0, \: S_0^{-1} = \alpha I \implies \begin{cases}
+	  m_N = \beta S_NX^TY \\
+	  S_N^{-1} = \alpha I + \beta X^TX
+	  \end{cases}
+	  $$
+	  \item با استفاده از نتایج قسمت قبل برای به دست آوردن $posterior$ داریم:
+	  $$
+	  Y = y_{n + 1}, \: X = x_{n + 1}^T, \: P(W) \propto N(m_N, S_N) \implies \begin{cases}
+	  m_{n + 1} = S_{n + 1}(S_N^{-1}m_N + \beta x_{n + 1} y_{n + 1}) \\
+	  S_{N + 1}^{-1} = S_N^{-1} + \beta x_{n + 1} x_{n + 1}^T
+	  \end{cases}
+	  $$
+	  \item 
+	  اثبات:
+	  $$
+	  \sigma_{N + 1}^2(x) \leq \sigma_{N}^2(x) \rightarrow x^TS_{N + 1} x \leq x^TS_Nx \rightarrow \frac{x^TS_Nxx^TS_Nx}{x^TS_Nx + 1} \geq 0
+	  $$
+	  نتیجه آخر در صورتی درست است که $S_N$ مثبت معین باشد یعنی $x^TS_Nx \geq 0$.
+	  $$
+	  S_{N + 1} = (\beta xx^T + S_N^{-1})^{-1} = S_N - \frac{S_Nxx^TS_N}{1 + x^TS_Nx}
+	  $$
+\end{itemize}
