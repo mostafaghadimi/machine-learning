@@ -1,0 +1,49 @@
+\سؤال{\lr{Closed Form Solution For Regression}}
+
+\begin{itemize}
+	\item اثبات:
+	$$
+	LSE = ||y - Xw||^2 = (y - Xw)^t(y - Xw)
+	$$
+	از آن‌جایی که می‌دانیم 
+	$(a - b)^t = a^t - b^t$
+	بنابراین:
+	$$
+	LSE = y^ty - y^tXw - w^tX^ty + w^tX^tXw
+	$$
+	چون 
+	$y^tXw$
+	یک اسکالر است و برای هر اسکالر $r$ داریم
+	 $r = r^t$ 
+	 بنابراین:
+	 $y^TXw = (y^tXw)^t = w^tX^ty$
+	 
+	 $$LSE =
+	 	y^t y - 2 w^t X^t y + w^t X^t X w
+	  $$
+	  
+	  با مشتق‌گیری نسبت به $w$ داریم:
+	  $$
+	  \frac{\partial LSE}{\partial w} = \frac{\partial}{\partial w} y^T y - 2 \frac{\partial}{\partial w} w^T X^T y + \frac{\partial}{\partial w} w^T X^T X w = 0 - 2X^Ty + 2X^TXw 
+	  $$
+	  
+	  $$
+	  \rightarrow X^T y - X^T X w = 0 \rightarrow X^T(y - X  w) = 0.
+	  $$
+	  
+	  $$
+	  X^Ty = X^T X w \rightarrow w^* = (X^T X)^{-1}X^T y 
+	  $$
+	\item اثبات:
+	$$
+	Ridge \: Regression = ||y - Xw||^2 + \lambda ||w||^2
+	$$
+	همانند قسمت قبل باید نسبت به $w$ مشتق بگیریم:
+	$$
+	\frac{\partial Ridge \: Regression}{\partial w} = -2X^T(Y - w^TX) + 2\lambda w = -2X^Ty + 2(X^TX + \lambda I)w = 0
+	$$
+	
+	$$
+	\rightarrow (X^TX + \lambda I)w = X^Ty \rightarrow w^* = (X^TX + \lambda I)^{-1}X^Ty
+	$$
+\end{itemize}
