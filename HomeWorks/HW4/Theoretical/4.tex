@@ -1,0 +1,82 @@
+\سؤال{\lr{Active Regression}}
+
+\begin{itemize}
+	\item اثبات:
+	$$
+	Y = Xw + \epsilon 
+	$$
+	حال اگر دو طرف معادله را از سمت چپ در $X^T$ ضرب کنیم، داریم:
+	$$
+	X^TY = X^TXw + X^T\epsilon \rightarrow X^TY - X^T\epsilon = X^TXw \rightarrow w = (X^TX)^{-1}X^TY - (X^TX)^{-1}X^T\epsilon
+	$$
+	همان‌طور که از قبل می‌دانیم 	$
+	Y = Xw + \epsilon 
+	$ بنابراین با جای‌گذاری رابطه بالا داریم:
+	$$
+	w = (X^TX)^{-1}X^T(Xw + \epsilon) - (X^TX)^{-1}X^T\epsilon \rightarrow w = w^* - (X^TX)^{-1}X^T\epsilon
+	$$
+	
+	$$
+	\implies \begin{cases}
+	E(w) = w^*\\
+	var(w) = (X^TX)^{-1}X^TX((X^TX)^{-1})^T = (X^TX)^{-1}
+	\end{cases}
+	\rightarrow w \propto N(w^*, (X^TX)^{-1})
+	$$
+	
+	\item می‌دانیم $var(x + y) = var(x) + var(y)$  بنابراین داریم:
+	
+	$$
+	var(X\hat{w} + \epsilon) = var(x\hat{w}) + var(\epsilon) = X var(\hat{w})X^T + I = X(X^TX)^{-1}X^T + I
+	$$
+	
+	\item 
+	\begin{itemize}
+		\item اثبات:
+	$$
+	A_n = \Sigma_{i = 1}^{n}\phi(x_i)\phi(x_i)^T = \Sigma_{i = 1}^{n}(1, x_i)^T(1, x_i) = \Sigma_{i = 1}^{n} \begin{pmatrix}
+	1 & x_i \\
+	x_i & x_i^2
+	\end{pmatrix} \rightarrow \Sigma x_i = \alpha, \: \Sigma x_i^2 = \beta \rightarrow A_n = \begin{pmatrix}
+	n & \alpha \\
+	\alpha & \beta 
+	\end{pmatrix}
+	$$
+	
+	$$
+	\implies (a, b)(\Sigma_{i = 1}^{n}\begin{pmatrix}
+	1 & x_i\\
+	x_i & x_i^2
+	\end{pmatrix})
+	\begin{pmatrix}
+	a \\
+	b
+	\end{pmatrix} = \Sigma_{i = 1}^{n} (a + bx_i, ax_i + bx_i^2)\begin{pmatrix}
+	a\\
+	b
+	\end{pmatrix} = \Sigma_{i = 1}^{n}a^2 + 2abx_i + b^2x_i^2
+	$$
+	
+	$$
+	\implies \Sigma_{i = 1}^{n}(a + bx_i)^2 \geq 0
+	$$
+	بنابراین ثابت می‌شود این ماتریس معین مثبت است.
+	\item اثبات:
+	$$
+	J(x) = E_x(var(\hat{y(x)})) = \int (\begin{pmatrix}
+	1 & x
+	\end{pmatrix}\begin{pmatrix}
+	1 & x \\
+	x & x^2
+	\end{pmatrix}\begin{pmatrix}
+	1 \\
+	x
+	\end{pmatrix} + 1)P(x)dx = \int P(x)((x^2 + 1)^ 2 + 1)dx
+	$$
+	
+	$$
+	\implies P(x) \propto N(0, v^2)
+	$$
+	\end{itemize}
+
+\end{itemize}
