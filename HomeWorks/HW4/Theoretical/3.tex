@@ -1,0 +1,49 @@
+\سؤال{\lr{Regression and Gradient Descent}}
+
+\begin{itemize}
+	\item برای نوشتن این رابطه داریم:
+	$$
+	\phi_i(x) = \begin{pmatrix}
+	1 \\
+	x_{i1}\\
+	x_{i2}\\
+	x_{i1}^2\\
+	x_{i2}^2
+	\end{pmatrix}, \: w = \begin{pmatrix}
+	w_0\\
+	w_1\\
+	w_2\\
+	w_3\\
+	w_4
+	\end{pmatrix} \: y = w^t\phi(x) + \epsilon
+	$$
+	همان‌طور که در صورت سوال به آن اشاره شده است، توزیغ $\epsilon$ یک توزیع نرمال با میانگین $0$ و واریانس $\sigma^2$ است. بنابراین داریم:
+	$$
+	y \propto N(w^t\phi(x), \sigma^2)
+	$$
+	\item با توجه به نتیجه‌گیری قسمت قبل داریم:
+	$$
+	P(Y|X) = \prod_{i = 1}^{N}P(y_i | x^{(i)}) = \prod_{i = 1}^{N}N(w^t\phi_i(x), \sigma^2)
+	$$
+	همان‌طور که از رابطه نرمال با پارامتر‌های $\mu$ و $\sigma^2$ می‌دانیم داریم:
+	$
+	N(\mu, \sigma^2) = \frac{1}{\sqrt{2\pi}\sigma}e^{\frac{-(x - \mu)^2}{2\sigma^2}}
+	$
+	بنابراین با لگاریتم گرفتن و حذف مقادیری که به $w$ وابسته نیستند (حذف ثوابت، طبق گفته‌ی سوال) داریم:
+	$$
+	log(P(Y|X)) = \frac{-1}{2\sigma^2}\Sigma_{i = 1}^{N}(y_i - w^t\phi_i(x))^2
+	$$
+	\item 
+	با توجه به نتیجه‌گیری قسمت قبل داریم:
+	$$
+	f(w_0, w_1, w_2, w_3, w_4) = \Sigma_{i = 1}^{N}(y_i - w^t\phi_i(x))^2
+	$$
+	\item با توجه به نتیجه‌گیری قسمت قبل داریم:
+	$$
+	\nabla f = -2 \Sigma_{i = 1}^{N}(y_i - w^t\phi_i(x))\phi_i(x)^t
+	$$
+	\item طبق فرمول $Gradient \: Descent$ و با جای‌گذاری نتیجه قسمت قبل در آن داریم:
+	$$
+	w^{i + 1} = w^i - \eta \nabla f = w^i + \eta (y_i - w^t\phi_i(x))\phi_i(x)^t
+	$$
+\end{itemize}
