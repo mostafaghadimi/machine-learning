@@ -1,0 +1,54 @@
+\سؤال{\lr{Regression Shrinkage Methods}}
+
+\begin{itemize}
+	\item 
+	اگر فرمول مربوط به $L_2$ و کم‌ترین مربعات را بنویسیم، داریم:
+	$$
+	L_2 = ||Y - XW||^2 + \lambda ||W||^2
+	$$
+	با اضافه کردن داده‌های جدید، یک $X$ و $Y$ جدید که آن را $X^\prime$ و $Y^\prime$ نام‌گذاری می‌کنیم، خواهیم داشت:
+	$$
+	X^\prime = \begin{pmatrix}
+	X_{n \times m}\\
+	\sqrt{\lambda} I_{m \times m}
+	\end{pmatrix}, \: Y^\prime = \begin{pmatrix}
+	Y_{n \times 1}\\
+	0_{m \times 1}
+	\end{pmatrix}
+	$$
+	\textbf{نکته:} فرض بر این است که $X$ یک ماتریس با $n$ داده‌ی آموزش و $m$ ویژگی است.
+	
+	حال با نوشتن فرمول کم‌ترین مربعات داریم:
+	$$
+	LSE = ||Y^\prime - X^\prime W||^2 = ||Y^\prime - X_{n\times m}W_{m\times 1} - \sqrt{\lambda} I_{m \times m} W_{m \times 1}||^2
+	$$
+	
+	$$
+	\rightarrow LSE = ||Y_{n \times 1} - X_{n\times m} W_{m \times 1} ||^2 + \lambda ||W_{m \times 1}||^2 = L_2
+	$$
+	
+	\item در دو حالت $L_1$ خوب کار نمی‌کند:
+	\begin{itemize}
+		\item وابستگی زیادی بین پارامترهای ورودی و خروجی وجود داشته باشد.
+		\item بین پارامتر‌های مرتبط و نامرتبط هم‌بستگی\footnote{\lr{correlation}} زیادی وجود داشته باشد.
+	\end{itemize}
+\item مشابه قسمت اول این سوال و تابع $loss$ داده شده اگر 
+$$
+L(w, \lambda_1, \lambda_2) = ||Y - XW||^ + \lambda_1||W||_2^2 + \lambda_2 ||W||_1
+$$
+را داشته باشیم و به جای آن $X$ و $Y$ جدید که به آن داده‌های جدید اضافه شده است را $X^\prime$ و $Y^\prime$ بنامیم داریم:
+
+	$$
+X^\prime = \begin{pmatrix}
+X_{n \times m}\\
+\sqrt{\lambda} I_{m \times m}
+\end{pmatrix}, \: Y^\prime = \begin{pmatrix}
+Y_{n \times 1}\\
+0_{m \times 1}
+\end{pmatrix}
+$$ 
+که با انجام مراحل مشابه قسمت اول جای‌گذاری آن در فرمول بالا داریم:
+$$
+L(w, \lambda_1, \lambda_2) = ||Y^\prime - X^\prime W||^2 + \lambda_1 ||W||_2^2 + \lambda_2 ||W||_1 = ||Y - XW||^2 + \lambda ||W||_1 = L_1 = Ridge \: Regression
+$$
+\end{itemize}
