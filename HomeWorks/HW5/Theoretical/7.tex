@@ -1,1 +1,19 @@
 \سؤال{}
+
+$$
+\int_{-\infty}^{+\infty} N(\theta | 0, 1) d\theta = 1 \xRightarrow{Symmetric} 
+\begin{cases}
+\int_{-\infty}^{0}N(\theta | 0, 1)d\theta = \frac{1}{2} \\
+\int_{0}^{\infty}N(\theta | 0, 1)d\theta = \frac{1}{2}
+\end{cases}
+$$
+
+$$
+\phi(a)  = \int_{-\infty}^{a} N(\theta | 0, 1) d\theta = \int_{-\infty}^{0} N(\theta | 0, 1) d\theta + \int_{0}^{a} N(\theta | 0, 1) d\theta =
+ \frac{1}{2} + \int_{0}^{a} \frac{1}{2\pi} e^{\frac{-\theta^2}{2}d}\theta
+$$
+با اعمال تغییر متغیر و انتگرال‌گیری خواهیم داشت:
+$$
+\phi(a) = \frac{1}{2} + \frac{1}{2} \int_{0}^{\frac{a}{\sqrt{2}}} \frac{2}{\sqrt{\pi}}e^{-\theta^2}d\theta
+= \frac{1}{2}(1 + \frac{2}{\sqrt{\pi}}\int_{0}^{\frac{a}{\sqrt{2}}}e^{-\theta^2}d\theta) \implies \phi(a) = \frac{1}{2}(1 + erf(\frac{a}{\sqrt{2}}))
+$$
