@@ -1,1 +1,28 @@
 \سؤال{}
+
+$$
+\frac{\partial E}{\partial y_n} = \frac{y_n - t_n}{y_n (1 - y_n)}, \:  \nabla  a_n = \phi_n
+$$
+
+$$
+\frac{\partial y_n}{\partial a_n} = \frac{\partial \phi(a_n)}{\partial a_n} = \frac{1}{\sqrt{2\pi}}e^{-a_n^2}
+$$
+
+با توجه به دو معادله بالا و ترکیب آن‌ها داریم:
+
+$$
+\nabla E = \Sigma_{n = 1}^{N}\frac{\partial E \partial y_n}{\partial y_n \partial a_n}\nabla a_n = \Sigma_{n = 1}^{N}\frac{y_n - t_n}{y_n (1 - y_n) \sqrt{2\pi}}e^{-a_n^2}\phi_n
+$$
+
+$$
+\frac{\partial }{\partial y_n } \frac{(y_n - t_n)}{y_n(1 - y_n)} = \frac{y_n(1-y_n)}{y_n^2(1 - y_n)^2} - \frac{(y_n - t_n)(1 - 2y_n)}{y_n^2(1-y_n)^2} = \frac{y_n^2 + t_n - 2y_nt_n}{y_n^2(1 - y_n)^2}
+$$
+
+$$
+\implies \nabla \nabla E = \Sigma_{n = 1}^{N}{\frac{\partial}{\partial y_n}[\frac{y_n - t_n}{y_n (1 - y_n)}]\frac{1}{\sqrt{2\pi}}e^{-a_n^2} \phi_n \nabla y_n + \frac{y_n - t_n}{y_n(1 - y_n)} \frac{e^{-a_n^2}(-2a_n)\phi_n\nabla a_n}{\sqrt{2\pi}}}
+$$
+
+$$
+\nabla \nabla E 
+= \Sigma_{n = 1}^N(\frac{y_n^2 + t_n - 2y_nt_n}{y_n(1-y_n)}\frac{1}{\sqrt(2\pi)}e^{-a_n^2} - 2a_n(y_n - t_n))\frac{e^{-2a_n^2}\phi_n\phi_n^T}{\sqrt{2\pi}y_n(1-y_n)}
+$$
