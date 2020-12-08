@@ -1,1 +1,36 @@
 \سؤال{}
+
+همان‌طور که در اسلاید‌ها
+\footnote{اسلاید ۷، صفحه ۱۷}
+دیدیم، داریم:
+\newline
+\newline
+\textbf{تعریف محدب بودن:}
+به ازای هر دو نقطه دل‌خواه مانند \lr{A} و \lr{B}، که متعلق به ناحیه‌ی $R_C$ هستند، خط متصل‌کننده‌ی آن دو نقطه نیز باید کاملا در آن ناحیه قرار داشته باشد.
+
+
+
+$$
+\forall \alpha \in [0, \: 1] \rightarrow
+\hat{x} = \alpha x_A + (1 - \alpha) x_B
+$$
+
+$$
+F_C(x) = F_C(\alpha A + (1 - \alpha) B) \xRightarrow{linearity \: of \: F} \alpha F_C(A) + (1 - \alpha) F_C(B)
+$$
+
+$$
+\rightarrow \forall d \in {1, \: ..., \: k}: F_C(A) \geq F_d(A), \: F_C(B) \geq F_d(B) \implies \alpha F_C{A} \geq \alpha F_d(A), \: (1 - \alpha) F_C(B) \geq (1 - \alpha) F_d(B)
+$$
+با توجه به نتیجه‌ی بالا، از جمع کردن دو طرف نامساوی داریم:
+$$
+\forall d \in {1, \: ..., \: k}: \alpha F_C(A) + (1 - \alpha) F_C(B) \geq \alpha F_d(A) + (1 - \alpha)F_d(B)
+$$
+
+پس ثایت می‌شود که به ازای هر نقطه‌ی روی خط متصل‌کننده‌ی $A$ و $B$ داریم:
+
+$$
+F_C(\theta) \geq F_d(\theta)
+$$
+
+پس ثابت شد که $\theta$ نیز در ناحیه‌ی $R_C$ است. بنابراین محدب بودن به این شکل ثابت می‌شود.
