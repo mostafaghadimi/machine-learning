@@ -1,1 +1,36 @@
 \سؤال{}
+
+$$
+Ak \leq ||w^{k + 1}|| \rightarrow w^{k+1}.w^{*} = (w^{k} + t^{(i)}x^{(i)})w^* \implies w^{(k)}.w^{(*)}+t^{(i)}(w^{*}x^{(i)}) \geq w^{(k)}w^* + \lambda 
+$$
+
+$$
+\implies w^{(k + 1)} w^* \geq k\lambda
+$$
+
+همان‌طور که در صورت سوال گفته شده است، اگر $w$ را از صفر شروع کنیم، به کمک استقرا داریم:
+
+$$
+||w^{(k + 1)} || \geq k\lambda
+$$
+
+$$
+||w^{(k + 1)}|| \leq \beta \sqrt{k}, \: ||w^{k + 1}||^2 = ||w^{(k)} + t^{i}x^{i}||^2
+$$
+
+$$
+\rightarrow ||w^{(k)}||^2 + ||x^{(i)}||^2(t^{(i)})^2 + 2t^{(i)}(w^{(k)}x^{(i)}) \leq ||w^{(k)}||^2 + ||x^{(i)}||^2(t^{(i)})^2
+$$
+
+$$
+\begin{cases}
+	t^{(i)}(x^{(k)}x^{(i)}) \leq 0 \\
+	(t^{(i)})^2 ||x^{(i)}||^2 = ||x^{(i)}||^2 = R^2 \\
+	(t^{(i)})^2 = 1 \\
+\end{cases}
+\implies ||w^{(k + 1)}|| ^ 2 \leq kR^2
+$$
+
+$$
+(w^{(i)})^2 = 0 \rightarrow ||w^{(k + 1)}|| \leq \sqrt{k}R \rightarrow k\lambda \leq ||w^{(k + 1)}|| \leq \sqrt{k}R \rightarrow k \leq (\frac{R}{\lambda})^2
+$$
