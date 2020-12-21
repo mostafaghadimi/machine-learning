@@ -1,1 +1,155 @@
-\سؤال{}
+\سؤال{هسته}
+
+\begin{itemize}
+	\item الف)
+	\begin{itemize}
+		\item یک) 
+		از آن‌جایی که می‌دانیم 
+		$k_1(x, x^\prime)$
+		و
+		$k_2(x, x^\prime)$
+		دو هسته‌ی معتبر هستند؛ بنابراین ماتریس هسته 
+		$K_1$
+		و 
+		$K_2$
+		هر دو مثبت نیمه‌معین هستند.
+		پس اگر فرض کنیم که ورودی‌های 
+		$x$ 
+		و 
+		$x^\prime$
+		هر دو، دو بعدی باشند، داریم:
+		
+		$$
+		k_3(x, x^\prime) = (x^Tx^\prime)^2 = 
+		(x_1x^\prime_1 + x_2x^\prime_2)^2 = x_1^2x_1^{\prime 2} + 2x_1x^\prime_1x_2x^\prime_2 + x_2^2x_2^{\prime 2}
+		$$
+		$$
+		\implies k_3(x, x^\prime) = (x_1^2, \sqrt{2}x_1x_2, x_2^2)(x_1^{\prime 2}, \sqrt{2}x^\prime_1x^\prime_2, x_2^{\prime 2}) = \phi(x)^T\phi(x^\prime)
+		$$
+		با توجه به نتیجه‌ی بالا داریم:
+		$$k_3 = k_1 + k_2$$
+		پس $k_3$ نیز مثبت نیمه‌معین بوده و ثایت شد که معتبر نیز هست.
+		\item دو)
+		با فرض این‌که تابع نگاشت هسته‌ی
+		$k_1$،
+		$\phi^{(1)}(x)$
+		با ابعاد $M$ و 
+		تابع نگاشت هسته‌ی
+		$k_2$،
+		$\phi^{(2)}(x)$
+		با ابعاد $N$ است، داریم:
+		$$
+		k_4(x, x^\prime) = k_1(x, x^\prime)k_2(x, x^\prime) = \phi^{(1)}(x)^T\phi^{(1)}(x^\prime)\phi^{(2)}(x)^T\phi^{(2)}(x^\prime)
+		= 
+		\Sigma_{i = 1}^M \phi_i^{(1)}(x) \phi_i^{(1)}(x^\prime) \Sigma_{j = 1}^N \phi_j^{(2)}(x)\phi_j^{(2)}(x^\prime)
+		$$
+		$$
+		\implies k_4(x, x^\prime) = \Sigma_{i = 1}^M \Sigma_{j = 1}^N [\phi_i^{(1)}(x)\phi_j^{(2)}(x)][\phi_i^{(1)}(x^\prime)\phi_j^{(2)}(x^\prime)] 
+		= 
+		\Sigma_{k = 1}^MN \phi_k(x)\phi_k(x^\prime) = \phi(x)^T\phi(x^\prime)
+		$$
+		
+		که در آن 
+		$\phi_i^{(1)}(x)$،
+		عنصر $i$ام 
+		$\phi^{(1)}(x)$
+		و 
+		$\phi_j^{(2)}(x)$
+		عنصر $j$ام
+		$\phi^{(2)}(x)$
+		است. 
+		\item سه)
+		
+		از آن‌جایی که 
+		$k_1$
+		یک هسته‌ی معتبر است، بنابراین آن را به صورت 
+		$k_1(x, x^\prime) = \phi(x)^T\phi(x^\prime)$
+		می‌توان نوشت. پس:
+		
+		$$
+		k_5(x, x^\prime) = ck_1(x, x^\prime) = [\sqrt{a}\phi(x)]^T[\sqrt{a}\phi(x^\prime)]
+		$$
+		که با توجه به فرض 
+		$a \geq 0$
+		ثابت می‌شود.
+		\item چهار)
+		اگر بسط تیلور را بنویسیم داریم:
+		$$
+		k_6(x, x^\prime) = a_n k_1(x, x^\prime)^n + a_{n - 1}k_1(x, x^\prime)^{n - 1} + \dots + a_1k_1(x, x^\prime) + a_0
+		$$
+		حال با استفاده از نتایج سه قسمت قبل و با توجه به این‌که همه‌ی ضرایب بسط تیلور مثبت است، پس این هسته نیز یک هسته‌ی معتبر است.
+	\end{itemize}
+	\item ب)
+	با توجه به این‌که تابع هسته را می‌توان آن را به شکل ضرب داخلی در فضای ویژگی نوشت، پس هسته‌ی معتبر است. 
+برای اثبات باید به رابطه‌ی 
+	$k(A, B) = 2^{|A \cap B|} = \phi(A)^T \phi(B)$
+	برسیم. 
+	
+	اگر
+	$$
+	\phi_U(X) = \begin{cases}
+	1 & if \: U \subseteq X \\
+	0 & otherwise
+	\end{cases}
+	$$
+	باشد، داریم:
+	$$
+	\phi(A)^T \phi(B) = \Sigma_{U \subseteq | A \cap B | } \phi_U(A)\phi_U(B)
+	$$
+	با استفاده از سیگما (جمع کردن) در رابطه‌ی بالا، همه‌ی زیرمجموعه‌های ممکن 
+	$ |A \cap B| $
+	را	اگر و تنها اگر هم زیرمجموعه‌ی $A$ و $B$ باشد (مقدار برابر با 1) داریم. با این کار تعداد زیرمجموعه‌های اشتراک $A$ و $B$  در فضای $S$ را محاسبه کرده‌ایم. علاوه‌براین هم $A$ و هم $B$ به عنوان زیرمجموعه‌ی فضای $S$ معرفی شده‌اند، بنابراین:
+	
+	$$
+	\phi(A)^T \phi(B) = 2^{|A \cap B|}
+	$$
+	\item پ)
+	\begin{itemize}
+		\item یک) 
+		
+		$$
+		k(x, x^\prime) = (x^T.x^\prime + c)^2 = k(
+		\begin{pmatrix}
+		x_1 \\ x_2 \\ \vdots \\ x_d
+		\end{pmatrix},
+		\begin{pmatrix}
+		x_1^\prime\\
+		x_2^\prime \\
+		\vdots \\
+		x_d^\prime
+		\end{pmatrix}
+		) = (c + x_1x_1^\prime + x_2x_2^\prime + \dots + x_dx_d^\prime)^2 
+		$$
+		$$
+		\implies k(x, x^\prime) = c^2 \Sigma_{i = 1}^d x_i^2x_i^{\prime 2} + \Sigma_{i = 1}^d 2cx_ix_i^\prime + \Sigma_{i = 1}^{d - 1}\Sigma_{j = i + 1}^d 2x_ix_i^\prime x_j x_j^\prime
+		$$
+		$$
+		\implies k(x, x^\prime) = \begin{pmatrix}
+		c & 
+		x_1^2, \dots, x_d^2, & \dots & \sqrt{2c}x_d
+		\end{pmatrix}
+		\begin{pmatrix}
+		c \\
+		x_1^\prime, \dots, x_d^\prime \\
+		\vdots \\
+		\sqrt{2c}x_d^\prime
+		\end{pmatrix}
+		$$
+		$$
+		\implies k(x, x^\prime) = \phi(x)^T\phi(x^\prime)
+		$$
+		\item دو)
+		اگر 
+		$c = 0$
+		باشد، آن‌گاه فضای تبدیل $d+1$ بعد کاهش می‌یابد؛ زیرا تعداد جملاتی که در آن $c$ ضرب شده است، $d+1$ است که با صفر شدن آن حذف می‌شوند.
+		\item سه)
+		$$
+		k(x, x^\prime) = (x^T.x^\prime + c)^M
+		$$
+		با توجه به توضیحاتی که در 
+		\href{https://en.wikipedia.org/wiki/Multinomial_theorem}{این لینک} داده شده است، تعداد جملات برابر با:
+		$$
+		\# \: of \: expressions = \binom{M + d + 1 - 1}{d + 1 - 1} = \binom{M + d}{d}
+		$$
+	\end{itemize}
+\end{itemize}
