@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2020.7.1)  22 DEC 2020 00:00
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2020.7.1)  22 DEC 2020 02:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1639,7 +1639,7 @@ LaTeX Font Warning: Command \small invalid in math mode on input line 106.
 LaTeX Font Warning: Command \small invalid in math mode on input line 4.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 5.
+LaTeX Font Warning: Command \small invalid in math mode on input line 26.
 
 ) [5] (./5.tex) [6]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 36.
@@ -1653,11 +1653,11 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 27373 strings out of 493007
- 492524 string characters out of 6136720
+ 27375 strings out of 493007
+ 492623 string characters out of 6136720
  647756 words of memory out of 5000000
- 30990 multiletter control sequences out of 15000+600000
- 546607 words of font info for 97 fonts, out of 8000000 for 9000
+ 30991 multiletter control sequences out of 15000+600000
+ 546615 words of font info for 98 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  53i,8n,74p,10443b,502s stack positions out of 5000i,500n,10000p,200000b,80000s
 

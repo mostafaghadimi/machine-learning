@@ -2,5 +2,42 @@
 
 \begin{itemize}
 	\item الف)
+	نامساوی \lr{Jensen}:
+	
+	$$
+	f(\Sigma_{i = 1}^M\lambda_i x_i) \leq \Sigma_{i = 1}^M\lambda_if(x_i)
+	$$
+	همان‌طور که در صورت سوال گفته شده است برای $E_{avg}$ داریم:
+	$$
+	E_{avg} = \frac{1}{M} \Sigma_{i = 1}^{M}E_x[(h_m(x) - h(x)^2]
+	$$
+	حال اگر $\frac{1}{M}$ را به درون سیگما ببریم، داریم:
+	$$
+	E_{avg} = E_x[\Sigma_{m=1}^M  \frac{1}{M}(h_m(x) - h(x))^2]
+	$$
+	
+	حال با توجه به نامساوی \lr{Jensen} و محدب بودن تابع داریم:
+	$$
+	(\Sigma_{m=1}^M\frac{1}{M}(h_m(x) - h(x))^2 \leq \Sigma_{m=1}^M\frac{1}{M}(h_m(x) - h(x))^2
+	$$
+	$$
+	\implies E_{com} \leq E_{avg}
+	$$
 	\item ب)
+	
+	$$
+	E_{avg} = \frac{1}{M} \Sigma_{m=1}^M E_x[(h_m(x) - h(x))^2]
+	$$
+	
+	$$
+	E_{com} = E_x[(\frac{1}{M} \Sigma_{m=1}^M h_m(x) - h(x))^2] = E_x[(\frac{1}{M} \Sigma_{m=1}^M h_m(x) - h(x)) (\frac{1}{M} \Sigma_{l=1}^M h_l(x) - h(x))]
+	$$
+	حال اگر یکی از عامل‌های $\frac{1}{M}$ را به دلیل ثابت بودن از داخل امید ریاضی بیرون بیاوریم، به دلیل فرضیات یعنی
+	 $$
+	 \forall m \neq l \: E[(h_m(x) - h(x))(h_l(x)-h(x))] = 0
+	 $$
+	 داریم:
+	 $$
+	 E_{com} = \frac{1}{M}(\frac{1}{M} \Sigma_{m=1}^M E_x[(h_m(x) - h(x))^2]) = \frac{1}{M}E_{avg}
+	 $$
 \end{itemize}
