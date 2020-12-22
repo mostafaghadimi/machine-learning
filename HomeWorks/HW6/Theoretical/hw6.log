@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2020.7.1)  22 DEC 2020 18:15
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2020.7.1)  22 DEC 2020 19:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2093,10 +2093,10 @@ LaTeX Font Warning: Command \small invalid in math mode on input line 106.
 LaTeX Font Warning: Command \small invalid in math mode on input line 4.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 5.
+LaTeX Font Warning: Command \small invalid in math mode on input line 15.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 6.
+LaTeX Font Warning: Command \small invalid in math mode on input line 23.
 
 ) [7] (./4.tex
 
