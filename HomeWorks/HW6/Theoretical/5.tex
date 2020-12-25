@@ -2,6 +2,18 @@
 
 \begin{itemize}
 	\item الف)
+	فرض خلف: $h_t = h_{t + 1}$
+	$$
+	 \epsilon_t = \frac{\Sigma_{i=1}^{N}w_t^{(i)} I(y^{(i)} \neq h_t(x^{(i)})}{\Sigma_{i=1}^N w_t^{(i)}} = \frac{\Sigma_{i=1}^{N}w_t^{(i)} I(y^{(i)} \neq h_t(x^{(i)})}{\Sigma_{i=1}^{N}w_t^{(i)} I(y^{(i)} \neq h_t(x^{(i)}) + \Sigma_{i=1}^{N}w_t^{(i)} I(y^{(i)} = h_t(x^{(i)})} < \frac{1}{2}
+	$$
+	با توجه به نحوه‌ی عمل‌کرد الگوریتم \lr{Adaboost} و فرض اولیه داریم:
+	$$
+	\epsilon_{t + 1}  = \frac{\Sigma_{i=1}^{N}w_t^{(i)} I(y^{(i)} \neq h_t(x^{(i)})}{\Sigma_{i=1}^{N}w_t^{(i)} I(y^{(i)} \neq h_t(x^{(i)}) + \Sigma_{i=1}^{N}w_t^{(i)} I(y^{(i)} = h_t(x^{(i)})} = \frac{\frac{1 - \epsilon_t}{\epsilon_t}\Sigma_{i=1}^Nw_t^{(i)} I(y^{(i)} \neq h_t(x^{(i)})}{\frac{1 - \epsilon_t}{\epsilon_t}\Sigma_{i=1}^Nw_t^{(i)} I(y^{(i)} \neq h_t(x^{(i)}) + \Sigma_{i=1}^Nw_t^{(i)} I(y^{(i)} = h_t(x^{(i)})}
+	$$
+	$$
+	\implies \epsilon_{t + 1} = \frac{\Sigma_{i=1}^Nw_t^{(i)} I(y^{(i)} = h_t(x^{(i)})}{2\Sigma_{i=1}^Nw_t^{(i)} I(y^{(i)} = h_t(x^{(i)})} = \frac{1}{2}
+	$$
+	که خلاف فرض است و حکم ثابت می‌شود.
 	\item ب)
 	خطای تابع نمایی به صورت 
 	$E = \Sigma_{n=1}^Ne^{-t_nf_m(x_n)}$
