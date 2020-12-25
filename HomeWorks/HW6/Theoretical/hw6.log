@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2020.7.1)  23 DEC 2020 00:55
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2020.7.1)  25 DEC 2020 06:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2056,10 +2056,10 @@ LaTeX Font Warning: Command \small invalid in math mode on input line 92.
 
 [2]
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 94.
+LaTeX Font Warning: Command \small invalid in math mode on input line 98.
 
 
-Overfull \hbox (48.53903pt too wide) detected at line 107
+Overfull \hbox (48.53903pt too wide) detected at line 111
 []\U/MdSymbolF/m/n/10.95 ^^@\OML/cmm/m/it/10.95 a\U/MdSymbolF/m/n/10.95 ^^F \U/
 MdSymbolB/m/n/10.95 ^^@ \OT1/cmr/m/n/10.95 ^^F[]\OML/cmm/m/it/10.95 a[] \U/MdSy
 mbolA/m/n/10.95 ^^N []\U/MdSymbolF/m/n/10.95 ^^@\OML/cmm/m/it/10.95 a[] \U/MdSy
